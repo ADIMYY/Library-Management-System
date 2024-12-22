@@ -42,18 +42,15 @@ A Node.js-powered Library Management System for handling book reservations, borr
 3. **Setup MongoDB**
    - Ensure MongoDB is running locally or update the connection string in the code:
      ```javascript
-     mongoose.connect('mongodb://localhost/library', {
-         useNewUrlParser: true,
-         useUnifiedTopology: true
-     });
+     mongoose.connect('mongodb://localhost/library');
      ```
 
 4. **Run the server**
    ```bash
-   npm start
+   npm start:dev
    ```
 
-   The server will run at [http://localhost:3000](http://localhost:3000).
+   The server will run at [http://localhost:4000](http://localhost:4000).
 
 ---
 
@@ -116,40 +113,3 @@ A Node.js-powered Library Management System for handling book reservations, borr
   performedAt: Date
 }
 ```
-
----
-
-## Example Data
-
-### **Books**
-```json
-[
-  {
-    "_id": "64e1f9c4d4c3e2f3b1234567",
-    "title": "1984",
-    "author": "George Orwell",
-    "isAvailable": false,
-    "borrowHistory": [
-      {
-        "user": "64e1fa88e5b3f1c4d1234568",
-        "borrowedAt": "2024-12-01T09:00:00.000Z",
-        "returnedAt": null
-      }
-    ]
-  }
-]
-```
-
-### **Logs**
-```json
-[
-  {
-    "_id": "64e21f3c2f8d6c0022a3b456",
-    "action": "Borrow Book",
-    "details": "User John Doe borrowed the book '1984' by George Orwell",
-    "performedAt": "2024-12-01T09:00:00.000Z"
-  }
-]
-```
-
----
