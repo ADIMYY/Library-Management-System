@@ -153,11 +153,3 @@ A Node.js-powered Library Management System for handling book reservations, borr
 ```
 
 ---
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-## Contribution
-Contributions are welcome! Please open an issue or submit a pull request for any feature requests or bug fixes.
